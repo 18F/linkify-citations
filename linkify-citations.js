@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   };
   
-  //var thePage = $('div#fetched_page');
-  //var doc = document.getElementById('fetched_page');
-  //var thePage = doc;
+  var doc = document.documentElement;
+  var thePage = doc;
   // find the citations
-  var citations = Citation.find(document.documentElement.innerHTML).citations;
+  var citations = Citation.find(doc.innerHTML).citations;
               
   // loop through each citation
   for (i = 0; i < citations.length; i++) {
