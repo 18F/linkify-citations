@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // var url = "/" + citation.reporter.volume + "/" + citation.reporter.reporter + "/" + citation.reporter.page;
     var url = getURLfromCitation(citation)
     if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
+    else return citation.match;
   };
   //
   var doc = document.documentElement;
