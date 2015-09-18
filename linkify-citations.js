@@ -27,9 +27,9 @@ var getURLfromCitation = function (citation) {
 
   switch (citation.type) {
     case "usc":
-      return url + "uscode&title=" + citation.usc.title + "year=mostrecent&section=" + citation.usc.section + "&type=usc"
-    case "us-law":
-      return url + "plaw&congress=" + citation.us-law.congress + "&lawtype=public&lawnum=" + citation.us-law.number
+      return url + "uscode&title=" + citation.usc.title + "&year=mostrecent&section=" + citation.usc.section + "&type=usc"
+    case "law":
+      return url + "plaw&congress=" + citation.law.congress + "&lawtype=public&lawnum=" + citation.law.number
     case "cfr":
       return "http://api.fdsys.gov/link?collection=cfr&titlenum=" +
         citation.cfr.title + "&partnum=" + citation.cfr.part + "&sectionnum="
