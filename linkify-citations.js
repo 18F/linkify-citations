@@ -5,7 +5,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   var citationToURL = function(citation) {
     // var url = "/" + citation.reporter.volume + "/" + citation.reporter.reporter + "/" + citation.reporter.page;
-    return "<a class='citation' href='" + getURLfromCitation(citation) + "'>" + citation.match + "</a>";
+    var url = getURLfromCitation(citation)
+    if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
   };
   //
   var doc = document.documentElement;
@@ -40,6 +41,6 @@ var getURLfromCitation = function (citation) {
     case "fedreg":
       return url + "fr&volume=" + citation.fedreg.volume + "&page=" + citation.fedreg.page
     default:
-      return ""
+      return false;
   }
 }
