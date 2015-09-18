@@ -4,7 +4,7 @@ Scans the DOM for legal citations, finds them, and turns them into HTML links.
 
 ## Usage
 
-```
+```html
 <script src="https://s3.amazonaws.com/linkify-citations/linkify-citations.js"></script>
 ```
 
