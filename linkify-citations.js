@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
       return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
     };
   };
-  
+  //
   var doc = document.documentElement;
   var thePage = doc;
   // find the citations
