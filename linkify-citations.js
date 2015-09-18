@@ -14,11 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
               
   // loop through each citation
   for (i = 0; i < citations.length; i++) {
-      // generate a link
-      var link = citationToURL(citations[i]);
-      // stick the link onto the DOM
-      thePage.innerHTML = thePage.innerHTML.replace(citations[i].match, link);
-    } 
+    // generate a link
+    var link = citationToURL(citations[i]);
+    // stick the link onto the DOM
+    thePage.innerHTML = thePage.innerHTML.replace(citations[i].match, link);
   }
 });
 
