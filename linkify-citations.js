@@ -34,7 +34,7 @@ var getURLfromCitation = function (citation) {
     case "usc":
       return url + "uscode&title=" + cite.title + "&year=mostrecent&section=" + cite.section + "&type=usc"
     case "law":
-      return url + "plaw&congress=" + cite.congress + "&lawtype=public&lawnum=" + cite.number
+      return url + "plaw&congress=" + cite.congress + "&lawtype=" + cite.type + "&lawnum=" + cite.number;
     case "cfr":
       return url + "cfr&titlenum=" + cite.title + "&partnum=" + cite.part +
         "&sectionnum=" + cite.section + "&year=mostrecent"
