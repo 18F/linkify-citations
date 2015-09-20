@@ -26,21 +26,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var getURLfromCitation = function (citation) {
 
-  var url = "http://api.fdsys.gov/link?collection="
+  var url = "http://api.fdsys.gov/link?collection=",
+      law_type = citation.type,
+      cite     = citation[law_type]; // Put cite's data in a consistently-named object
 
-  switch (citation.type) {
+  switch (law_type) {
     case "usc":
-      return url + "uscode&title=" + citation.usc.title + "&year=mostrecent&section=" + citation.usc.section + "&type=usc"
+      return url + "uscode&title=" + cite.title + "&year=mostrecent&section=" + cite.section + "&type=usc"
     case "law":
-      return url + "plaw&congress=" + citation.law.congress + "&lawtype=public&lawnum=" + citation.law.number
+      return url + "plaw&congress=" + cite.congress + "&lawtype=" + cite.type + "&lawnum=" + cite.number;
     case "cfr":
-      return "http://api.fdsys.gov/link?collection=cfr&titlenum=" +
-        citation.cfr.title + "&partnum=" + citation.cfr.part + "&sectionnum="
-        citation.cfr.section + "&year=mostrecent"
+      return url + "cfr&titlenum=" + cite.title + "&partnum=" + cite.part +
+        // For 'section', use only the section number substring ('74.2' -> '2')
+        // Also, hide 'null' values:
+        "&sectionnum=" + ( cite.section !== null ? cite.section.split('.')[1] : '' ) +
+        "&year=mostrecent";
     case "stat":
-      return url + "statute&volume=" + citation.stat.volume + "&page=" + citation.stat.page
+      return url + "statute&volume=" + cite.volume + "&page=" + cite.page
     case "fedreg":
-      return url + "fr&volume=" + citation.fedreg.volume + "&page=" + citation.fedreg.page
+      return url + "fr&volume=" + cite.volume + "&page=" + cite.page
     default:
       return false;
   }
