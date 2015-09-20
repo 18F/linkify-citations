@@ -37,7 +37,10 @@ var getURLfromCitation = function (citation) {
       return url + "plaw&congress=" + cite.congress + "&lawtype=" + cite.type + "&lawnum=" + cite.number;
     case "cfr":
       return url + "cfr&titlenum=" + cite.title + "&partnum=" + cite.part +
-        "&sectionnum=" + cite.section + "&year=mostrecent"
+        // For 'section', use only the section number substring ('74.2' -> '2')
+        // Also, hide 'null' values:
+        "&sectionnum=" + ( cite.section !== null ? cite.section.split('.')[1] : '' ) +
+        "&year=mostrecent";
     case "stat":
       return url + "statute&volume=" + cite.volume + "&page=" + cite.page
     case "fedreg":
