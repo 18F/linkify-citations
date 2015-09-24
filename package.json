@@ -1,0 +1,27 @@
+{
+  "name": "linkify-citations",
+  "version": "1.0.0",
+  "description": "JS library to linkify the DOM",
+  "main": "linkify-citations.js",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify linkify-citations.js | ./node_modules/uglify-js/bin/uglifyjs -o linkify.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/linkify-citations.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/18F/linkify-citations/issues"
+  },
+  "homepage": "https://github.com/18F/linkify-citations#readme",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "uglify-js": "^2.4.24"
+  },
+  "dependencies": {
+    "citation": "^0.8.1"
+  }
+}
