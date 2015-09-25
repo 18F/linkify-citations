@@ -1,4 +1,4 @@
-script: echo "deploying to S3"
+language: node_js
 deploy:
   provider: s3
   access_key_id:
