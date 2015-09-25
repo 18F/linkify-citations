@@ -1002,7 +1002,6 @@ if (typeof window === 'undefined') {
   }
 }
 else {
-  console.log(window.document.documentElement)
   window.document.addEventListener("DOMContentLoaded", function() {
     window.document.documentElement.innerHTML = replaceDOM(window.document)
   })
