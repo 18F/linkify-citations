@@ -4,7 +4,9 @@
   "description": "JS library to linkify the DOM",
   "main": "linkify-citations.js",
   "scripts": {
-    "build": "./node_modules/.bin/browserify linkify-citations.js | ./node_modules/uglify-js/bin/uglifyjs -o linkify.min.js",
+    "build:browserify": "./node_modules/.bin/browserify src/linkify-citations.js > linkify-citations.js",
+    "build:minify": "./node_modules/uglify-js/bin/uglifyjs linkify-citations.js -o linkify.min.js",
+    "build": "npm run build:browserify && npm run build:minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,8 @@
   "homepage": "https://github.com/18F/linkify-citations#readme",
   "devDependencies": {
     "browserify": "^11.2.0",
+    "jsdom": "^6.5.1",
+    "tape": "^4.2.0",
     "uglify-js": "^2.4.24"
   },
   "dependencies": {
