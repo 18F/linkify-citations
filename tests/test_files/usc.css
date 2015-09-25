@@ -1,0 +1,1304 @@
+
+body{
+ margin-left: 3em;
+ width: 650px;
+}
+
+div{
+ float: left;
+ width: 650px;
+}
+
+div.statutory-body{
+ margin-top: 10px;
+ float: left;
+ width: 650px;
+ margin-left: 0em;
+ text-indent: 1em;
+
+}
+
+div.source-credit{
+ float: left;
+ width: 650px;
+ margin-top: 5px;
+ margin-left: 0em;
+ text-indent: 0em;
+
+}
+
+div.docinfo{
+ margin-top: 20px;
+ border-top: 1px solid;
+ border-bottom: 1px solid;
+ color: gray;
+ font-size: 10pt;
+}
+
+
+
+div.analysis{
+ /*margin-bottom: 1em;*/
+}
+
+div.analysis-head-left{
+ float: left;
+ width: 600px;
+ font-size: .80em;
+}
+
+div.analysis-head-right{
+ float: right;
+ width: 50px;
+ text-align: right;
+ font-size: .80em;
+}
+
+
+div.three-column-analysis-style-content-left{
+ float: left;
+ width: 50px;
+ font-weight: bold;
+}
+
+div.three-column-analysis-style-content-center{
+ float: left;
+ width: 550px;
+ font-weight: bold;
+}
+
+
+div.three-column-analysis-style-content-right{
+ float: right;
+ width: 50px;
+ text-align: right;
+ font-weight: bold;
+}
+
+div.two-column-analysis-style-content-left{
+ overflow: visible;
+ float: left;
+ width: auto;
+}
+
+
+div.two-column-analysis-style-content-left#wide{
+ overflow: visible;
+ float: left;
+ width: 550px;
+}
+
+
+div.two-column-analysis-style-content-right{
+ float: right;
+ width: 550px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 0em;
+}
+
+div.two-column-analysis-style-content-right-half-wide{
+ float: right;
+ width: 325px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 0em;
+}
+
+div.two-column-analysis-style-content-subitem-left{
+ float: left;
+ width: 50px;
+ text-align: left;
+ margin-left: 100px;
+}
+
+
+div.two-column-analysis-style-content-subitem-right{
+ float: right;
+ width: 500px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 0em;
+}
+
+
+div.wide_left_side-two-column-analysis-style-content-left{
+ font-size: 11pt;
+ background: purple;
+ float: left;
+ width: 420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 0em;
+ }
+
+
+
+
+div.bold-large-wide_left_side-two-column-analysis-style-content-left{
+ font-size: 13pt;
+ font-weight: bold;
+ float: left;
+ width: 420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 0em;
+ }
+
+
+
+
+div.bold-large-wide_left_side-two-column-analysis-style-content-right{
+ font-size: 13pt;
+ font-weight: bold;
+ float: right;
+ width: 100px;
+ text-align: right;
+ margin-left: 0em;
+}
+
+div.wide_left_side_0em-two-column-analysis-style-content-left{
+ font-size: 11pt;
+ float: left;
+ width:420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 1em;
+ }
+
+
+div.wide_left_side_2em-two-column-analysis-style-content-left{
+ font-size: 11pt;
+ float: left;
+ width: 420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 4em;
+ }
+
+div.wide_left_side_3em-two-column-analysis-style-content-left{
+ font-size: 11pt;
+ float: left;
+ width: 420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 5em;
+ }
+
+
+div.wide_left_side_4em-two-column-analysis-style-content-left{
+ font-size: 11pt;
+ background: purple;
+ float: left;
+ width: 420px;
+ text-align: left;
+ text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 6em; 
+}
+
+
+div.wide_left_side-two-column-analysis-style-content-right{
+ font-size: 11pt;
+ float: right;
+ width: 100px;
+ text-align: right;
+ margin-left: 0em;
+}
+
+
+
+
+div.note-wide_left_side_0em-two-column-analysis-style-content-left{
+ font-size: 10pt;
+ background: purple;
+ float: left;
+ width: 420px;
+ text-align: left;
+  text-indent: -1em;
+ padding-left: 1em;
+ margin-left: 1em;
+ }
+
+
+div.note-wide_left_side-two-column-analysis-style-content-right{
+ font-size: 10pt;
+ background: green;
+ float: right;
+ width: 100px;
+ text-align: right;
+ margin-left: 0em;
+}
+
+/*Solution for leader work areas (F5800 \aI37 \aL and \D("heads") )************/
+
+div.leader-work-head-left{
+ font-size: 11pt;
+/*float: left;*/
+ width: 450px;
+ /*height: 1em;*/
+ text-align: left;
+	font-weight: bolder;
+ text-indent: 0em;
+ margin-left: 0em;
+ background: green;
+}
+
+div.leader-work-head-right{
+font-size: 11pt;
+ /*float: right;*/
+ width: 200px;
+ /*height: 1em;*/
+ text-align: right;
+	font-weight: bolder;
+ margin-left: 0em;
+ background: orange;
+}
+
+div.leader-work-left{
+ font-size: 11pt;
+ float: left;
+ width: 450px;
+ text-align: left;
+	background-image : url(dot_line.gif);
+ background-repeat: repeat-x;
+ background-position: bottom;
+ text-indent: 0em;
+ margin-left: 0em;
+ background: green;
+ }
+
+div.leader-work-right{
+ font-size: 11pt;
+ float: right;
+ width: 200px;
+ text-align: right;
+ background-image : url(dot_line.gif);
+ background-repeat: repeat-x;
+ background-position: bottom;
+ margin-left: 0em;
+ background: orange;
+}
+
+/*actual data is in the spans*/
+div.leader-work-left span{
+ float: left;
+	padding-right: 5px;
+ display: block;
+ background-color: tan;
+	background-image: none;
+
+}
+
+div.leader-work-right span{
+ float: right;
+	padding-left: 5px;
+ display: block;
+ background-color: tan;
+	background-image: none;
+	margin-left: .5em;
+}
+
+div.leader-work-head-left span{
+ float: left;
+ display: block;
+ background-color: tan;
+	background-image: none;
+
+}
+
+div.leader-work-head-right span{
+ float: right;
+
+ display: block;
+ background-color: tan;
+	background-image: none;
+	margin-left: .5em;
+}
+
+h2 span.sans-serif{
+ font-family: sans-serif;
+}
+
+/******************************************************************************/
+
+
+
+
+div.section-head-text{
+ width: 85%;
+ float: left;
+ text-align:left;
+
+}
+
+div.publication-date{
+ font-size: 10pt;
+ color: grey;
+ float: right;
+ width: 15%;
+ text-align: right;
+ margin-left: 0em;
+ }
+
+
+
+h1{
+ text-align: center;
+ margin-bottom: 3px;
+}
+
+
+
+h2{
+ text-align: center;
+ margin-bottom: 3px;
+}
+
+
+h3{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.subchapter-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;   
+}
+
+h3.chapter-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.subpart-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.part-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.subtitle-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.title-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+ 
+ 
+
+h3.subdivision-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.division-head{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+
+h3.analysis-subhead{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+ 
+h3.reorganizationplan-subhead{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+
+h3.section-head{
+  text-align: left;
+		padding-top: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+ }
+
+h3.formula{
+  text-align: center;
+  font-weight: normal;
+  font-size: 12pt;
+  margin-top: .5em;
+  margin-bottom: .5em;
+ }
+
+/*
+ @todo: 20090708
+ Headings need to be adjusted to 1em flush and hang using:
+
+ A text-indent of -1em
+ A padding of 1em
+ The left margin set to the items indent plus 1em to make up for the -1em
+   indent of the first line.
+
+
+*/
+
+
+
+h4{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-variant: small-caps;
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-left: 0em;
+}
+
+
+h4.note-head{
+  font-size: 11pt;
+}
+
+h4.analysis-subhead{
+ text-align: center;
+ margin-top: 12px;
+ font-weight: normal;
+}
+
+
+
+h4.subsection-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+	padding-left: 1em;
+	text-indent: -1em;
+	margin-left: 0em;
+}
+
+
+h4.paragraph-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+ margin-left: 1em;
+ padding-left: 2em;
+ background: white;
+
+}
+
+h4.subparagraph-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+
+ padding-left: 1em;
+ text-indent: -1em;
+ margin-left: 2em;
+}
+
+h4.clause-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+ text-indent: -1em;
+ margin-left: 3em;
+ padding-left: 1em;
+}
+
+h4.subclause-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+	padding-left: 1em;
+	text-indent: -1em;
+ margin-left: 4em;
+}
+
+h4.subsubclause-head{
+ font-variant: normal;
+ font-weight: bold;
+ text-align: left;
+ margin-top: 7px;
+	padding-left: 1em;
+	text-indent: -1em;
+ margin-left: 5em;
+	background: yellow;
+}
+
+
+h4.note-sub-head{
+ text-align: left;
+ margin-top: 7px;
+ font-size: 90%;
+ font-weight: normal;
+}
+
+h5.paytable-subhead{
+ text-align: center;
+ margin: none;
+ font-weight: normal;
+}
+
+
+
+p{
+ padding: 0em;
+ margin: 0em;
+ text-indent: 1em;
+}
+
+
+p.statutory-body-1em{
+ margin-left: 1em;
+ text-indent: 1em;
+}
+
+p.statutory-body-2em{
+ margin-left: 2em;
+ text-indent: 1em;
+}
+
+p.statutory-body-3em{
+ margin-left: 3em;
+ text-indent: 1em;
+}
+
+p.statutory-body-4em{
+ margin-left: 4em;
+ text-indent: 1em;
+}
+
+p.statutory-body-5em{
+ margin-left: 5em;
+ text-indent: 1em;
+}
+
+p.statutory-body-flush0_hang2{
+ padding-left: 2em;
+ text-indent: -2em;
+}
+
+
+/**/
+p.statutory-body-flush2_hang3{
+ padding-left: 3em;
+ text-indent: -1em;
+}
+
+p.statutory-body-block-1em{
+ padding-left: 1em;
+ text-indent:0em;
+ 
+}
+
+p.statutory-body-block-4em{
+ padding-left: 4em;
+ text-indent:0em;
+}
+
+
+
+/*USC 28A */
+p.statutory-body-block-2em-right{
+ padding-right: 4em;
+ margin-top: .5em;
+ text-align: right;
+ text-indent: 0em;
+}
+
+
+p.note-body{
+ font-size: 11pt;
+ text-indent: 1em;
+}
+
+p.note-body-1em{
+ font-size: 11pt;
+ margin-left: 1em;
+ text-indent: 2em;
+}
+
+p.note-body-2em{
+ font-size: 11pt;
+ margin-left: 2em;
+ text-indent: 3em;
+}
+
+p.note-body-3em{
+ font-size: 11pt;
+ margin-left: 3em;
+ text-indent: 4em;
+}
+
+p.note-body-4em{
+ background: lightgreen;
+ font-size: 11pt;
+ margin-left: 4em;
+ text-indent: 5em;
+}
+
+p.note-body-5em{
+ font-size: 11pt;
+ margin-left: 5em;
+ text-indent: 6em;
+}
+
+
+p.note-body-flush0_hang1{
+ font-size: 11pt;
+ padding-left: 1em;
+ text-indent: -1em;
+}
+
+
+p.note-body-flush0_hang4{
+ font-size: 11pt;
+ padding-left: 4em;
+ text-indent: -4em;
+}
+
+p.note-body-flush3_hang4{
+ font-size: 11pt;
+ padding-left: 4em;
+ text-indent: -1em;
+}
+
+
+p.note-body-block{
+ font-size: 11pt;
+ text-indent: 0em;
+}
+
+
+p.futureamend-note-body{
+ font-style: italic;
+}
+
+
+p.source-credit{
+ margin-top: 5px;
+ margin-left: 0em;
+ text-indent: 0em;
+}
+
+p.presidential-signature{
+ text-align: right;
+ margin-bottom: 1em;
+ font-variant: small-caps;
+}
+
+p.chief-justice-signature{
+ text-align: right;
+ margin-bottom: 1em;
+ font-variant: small-caps;
+}
+
+p.presidential-signature{
+ text-align: right;
+ margin-bottom: 1em;
+ font-variant: small-caps;
+}
+
+p.signature{
+ text-align: right;
+ margin-bottom: 1em;
+}
+
+p.usc-title-ital-spanner{
+ text-align: center;
+ font-style: italic;
+ margin-bottom: 2em;
+}
+
+p.usc28aForm-left{
+ padding-left: 4em;
+}
+
+p.usc28aForm-right{
+ text-align: right;
+ padding-right: 4em; 
+}
+
+p.footnote{
+ margin: 1em;
+ font-style: italic;
+}
+
+
+
+p span.monospaced{
+ font-family: monospace;
+}
+
+
+cap-smallcap{
+ font-variant: small-caps;
+}
+
+
+caption{
+ margin: .25em;
+ text-align: center;
+ /*font-weight: bold;*/
+ /*font-variant: small-caps;*/
+ font-size: 1.05em
+}
+
+/********************* TABLES *******************/
+
+table{
+ border-style: solid;
+ border-color: black;
+ border-top-width: 1;
+ border-bottom-width:  1;
+ border-right: none;
+ border-left: none;
+ margin-top: 1em;
+ margin-bottom: 2em;
+ width:650px;
+}
+
+
+table th{
+ font-weight: normal;
+ border-top: 5px;
+ border-bottom: 1px solid;
+ border-right: none;
+ border-left:none;
+}
+
+table td{
+ padding-right: .5em;
+ padding-left: 1.25em;
+ text-indent: -1em;
+ vertical-align: top;
+}
+
+td.tablesubheadingcenter{
+ text-align: center;
+ padding-top:1em;
+}
+
+/*Going to need to reconcile usc style tables with this stuff*/
+table.usc td.tablesubheadingleft{
+ text-align: left;
+ padding-top:1em;
+ padding-left:1em;
+}
+
+
+table td.right{
+ text-align:right;
+ padding-right: 2em;
+}
+
+table td.left{
+ text-align:left;
+ padding-left: 2em;
+}
+
+
+/*
+table.uscdispo2col{
+ border-style: solid;
+ border-color: black;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ border-right: none;
+ border-left: none;
+ margin-top: 1em;
+}
+*/
+
+
+table.uscdispo2col td.right{
+ width: 50%;
+ text-align: left;
+}
+
+table.uscdispo2col td.left{
+ width: 50%;
+ border-right: 1px solid;
+}
+
+table.uscdispo2col td.right{
+ width: 50%;
+ text-align: left;
+}
+
+
+
+table.uscdispo3col{
+ border-style: solid;
+ border-color: black;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ border-right: none;
+ border-left: none;
+ margin-top: 1em;
+}
+
+table.uscdispo3col td.left{
+ width: 17%;
+}
+
+table.uscdispo3col td.middle{
+ width: 66%;
+ border-right: 1px solid;
+ border-left: 1px solid;
+}
+
+table.uscdispo3col td.right{
+ width: 17%;
+ text-align: right;
+}
+
+
+/*Historical and Revision notes table*/
+table.uschistrev{
+ margin-bottom: .6em;
+}
+
+table.uschistrev p{
+ text-indent: -1em;
+}
+
+
+table.uschistrev td.left{
+ width: 20%;
+}
+
+table.uschistrev td.middle{
+ width: 35%;
+ border-right: 1px solid;
+ border-left: 1px solid;
+}
+
+table.uschistrev td.right{
+ width: 45%;
+ text-align: left;
+}
+
+
+
+table.uschistrev2col td.left{
+ width: 50%;
+}
+
+
+table.uschistrev2col td.right{
+ width: 50%;
+ text-align: left;
+}
+
+
+
+
+/*uscflagdim*/
+table.uscflagdimensions{
+ margin-bottom: .6em;
+}
+
+
+table.uscflagdimensions td.left{
+ width: 70%;
+}
+
+table.uscflagdimensions td.middle{
+ width: 15%;
+ border-right: 1px solid;
+ border-left: 1px solid;
+ text-align: right;
+}
+
+table.uscflagdimensions td.right{
+ width: 15%;
+ text-align: right;
+}
+
+
+
+/*uscflagimagetable*/
+table.uscflagimagetable{
+ margin-bottom: .6em;
+}
+
+table.uscflagimagetable th{
+ border-left: 1px solid;
+}
+
+table.uscflagimagetable th#row0col0{
+ border-left: none;
+}
+
+
+table.uscflagimagetable td.left{
+ width: 10%;
+}
+
+table.uscflagimagetable td.middle{
+ width: 10%;
+ /*border-right: 1px solid;*/
+ border-left: 1px solid;
+ text-align: right;
+}
+
+/*All tables should be done this way and not two borders on the middle col*/
+table.uscflagimagetable td.right{
+ width: 10%;
+ text-align: right;
+ border-left: 1px solid;
+
+}
+
+
+
+
+/*5:5305, 50a analysis*/
+table.usc2colnohead{
+ margin-bottom: .5em;
+}
+
+
+table.usc2colnohead td.right{
+ padding-right: 2em;
+ text-align: right;
+}
+
+table.usc2colnohead td.left{
+ padding-right: .5em;
+ padding-left: 1.25em;
+ width: 65%;
+ vertical-align: top;
+}
+
+/*5:5305*/
+table.usc2colnoheadleftjustify th{
+ text-align: left;
+}
+
+table.usc2colnoheadleftjustify td.right{
+ padding-right: .5em;
+ padding-left: 2.5em;
+ text-indent: -1em;
+ text-align: left;
+ vertical-align: top;
+
+}
+
+
+table.usc2colnoheadleftjustify td.left2em{
+ padding-right: 3.5em;
+ padding-left: 2.25em;
+ /*text-indent: -1em;*/
+ vertical-align: top;
+}
+
+
+
+
+table.usc2colnohead-text{
+ margin-bottom: .5em;
+ border: none;
+}
+
+table.usc2colnohead-text th{
+ border: none;
+}
+
+
+table.usc2colnohead-text td.right{
+ padding-right: .5em;
+ padding-left: 1.25em;
+ /*text-indent: -1em;*/
+ /*width: 80px;*/
+ text-align: left;
+ vertical-align: top;
+}
+
+table.usc2colnohead-text td.left{
+ padding-right: .5em;
+ padding-left: 1.25em;
+ /*text-indent: -1em;*/
+ width: 147px;
+ vertical-align: top;
+}
+
+
+/*
+Pay tables
+*/
+table.uscpayschedule{
+ margin-bottom: .5em;
+}
+
+table.uscpayschedule th{
+ vertical-align: top;
+ font-size: 9pt;
+ text-align: center;
+}
+
+
+table.uscpayschedule td{
+ vertical-align: top;
+ font-size: 9pt;
+ text-align: right;
+}
+
+
+table.uscpayschedule td.left2em{
+ vertical-align: top;
+ font-size: 9pt;
+ text-align: right;
+ padding-left: 1em;
+}
+
+table.uscpayschedule td.left{
+ text-align: left;
+ vertical-align: top;
+}
+
+
+table.uscpayschedule td.left2em{
+ text-align: left;
+ vertical-align: top;
+ text-indent: 1em;
+}
+
+
+
+
+table.usc td{
+ border-style: hidden;
+ padding: 1px;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+
+
+table.usc th.col2{
+/* border-bottom: 1px solid;*/
+}
+
+
+table.usc td.col1{
+ width: 17%;
+}
+
+
+table.usc td.I01{
+ width: 17%;
+}
+
+
+table.usc td.I22{
+ width: 17%;
+}
+
+
+
+table.usc td.colmiddle{
+ width: 66%;
+ /*border-style: line;*/
+ /*border-top: 1px solid;*/
+ border-right: 1px solid;
+ border-left: 1px solid;
+ /*border-bottom: 1px dashed;*/
+}
+
+
+table.usc td.colright{
+ width: 17%;
+ text-align: right;
+
+}
+
+/*Added for 25:677h */
+table.usc td.left{
+ padding-left:1em;
+}
+
+table.usc td.middle{
+ text-align:right;
+ padding-right:1em;
+}
+
+table.usc td.right{
+ text-align:right;
+ padding-right:1em;
+}
+
+table.usc td.left2em{
+ padding-left:3em;
+}
+
+table.usc td.left4em{
+ padding-left:5em;
+}
+
+/********* USC 45 ********/
+table.title45section261to273dispo td{
+ width:217px;
+}
+
+
+table.title45section261to273dispo td.middle{
+ border-right: 1px solid;
+ border-left: 1px solid;
+}
+
+table.title45section261to273dispo td.right{
+ text-align:left;
+}
+
+
+/********* USC 48 ********/
+table.title46section2101dispo td.right{
+ text-align:left;
+ width: 50%;
+}
+
+/********* USC 48 ********/
+table.title48Ch2{
+ width: 600px;
+}
+
+
+table.title48Ch2 td{
+ text-align: center;
+}
+
+table.title48Ch2 td.left{
+ width: 25%;
+}
+
+table.title48Ch2 td.middle{
+ width: 40%;
+}
+
+table.title48Ch2 td.right{
+ width: 20%;
+}
+
+
+table.title48section1421f td.left{
+ width: 15%;
+ text-align:right;
+ border-right-style: solid;
+ border-right-width:thin;
+}
+
+table.title48section1421f td.middle{
+ width: 15%;
+ text-align: right;
+}
+
+table.title48section1421f td.right{
+ width: 60%;
+ text-align: left;
+ border-left-style: solid;
+ border-left-width:thin;
+}
+
+
+
+
+table.title48Section1921 td{
+ /*width: 20%;*/
+ text-align: center;
+}
+
+table.title48Section1921 td.middle{
+ width: 20%;
+}
+
+/********* USC 50 ********/
+table.title50section401execordertoc td.right{
+ width: 60%;
+ text-align:left;
+}
+
+table.title50section435 td.left{
+ width: 15%;
+}
+
+table.title50section435 td.middle{
+ width: 60%;
+}
+
+td p{
+ text-indent: -1em;
+ text-align:left;
+ color: red;
+}
+
+
+br.Q04{
+ 
+}
+
+br.Q08{
+ padding-bottom:1em;
+}

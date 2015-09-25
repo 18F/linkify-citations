@@ -7,7 +7,7 @@
     "build:browserify": "./node_modules/.bin/browserify src/linkify-citations.js > linkify-citations.js",
     "build:minify": "./node_modules/uglify-js/bin/uglifyjs linkify-citations.js -o linkify.min.js",
     "build": "npm run build:browserify && npm run build:minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape tests/**.js"
   },
   "repository": {
     "type": "git",
