@@ -952,15 +952,13 @@ module.exports = {
 // Load minified citation.js
 var Citation = require('citation');
 
-document.addEventListener("DOMContentLoaded", function() {
-  var citationToURL = function(citation) {
-    // var url = "/" + citation.reporter.volume + "/" + citation.reporter.reporter + "/" + citation.reporter.page;
-    var url = getURLfromCitation(citation)
-    if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
-    else return citation.match;
-  };
+var citationToURL = function(citation) {
+  var url = getURLfromCitation(citation)
+  if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
+  else return citation.match;
+};
 
-  //
+var replaceDOM = function (document) {
   var thePage = document.documentElement.cloneNode(true);
   // find the citations
   var citations = Citation.find(thePage.innerHTML).citations;
@@ -972,33 +970,41 @@ document.addEventListener("DOMContentLoaded", function() {
     // stick the link onto the DOM
     thePage.innerHTML = thePage.innerHTML.replace(citations[i].match, link);
   }
-  document.documentElement.innerHTML = thePage.innerHTML;
-});
+  return thePage.innerHTML;  
+}
 
 var getURLfromCitation = function (citation) {
+  var url = "http://api.fdsys.gov/link?collection="
 
-  var url = "http://api.fdsys.gov/link?collection=",
-      law_type = citation.type,
-      cite     = citation[law_type]; // Put cite's data in a consistently-named object
-
-  switch (law_type) {
+  switch (citation.type) {
     case "usc":
-      return url + "uscode&title=" + cite.title + "&year=mostrecent&section=" + cite.section + "&type=usc"
+      return url + "uscode&title=" + citation.usc.title + "&year=mostrecent&section=" + citation.usc.section + "&type=usc"
     case "law":
-      return url + "plaw&congress=" + cite.congress + "&lawtype=" + cite.type + "&lawnum=" + cite.number;
+      return url + "plaw&congress=" + citation.law.congress + "&lawtype=public&lawnum=" + citation.law.number
     case "cfr":
-      return url + "cfr&titlenum=" + cite.title + "&partnum=" + cite.part +
-        // For 'section', use only the section number substring ('74.2' -> '2')
-        // Also, hide 'null' values:
-        "&sectionnum=" + ( cite.section !== null ? cite.section.split('.')[1] : '' ) +
-        "&year=mostrecent";
+      return "http://api.fdsys.gov/link?collection=cfr&titlenum=" +
+        citation.cfr.title + "&partnum=" + citation.cfr.part + "&sectionnum="
+        citation.cfr.section + "&year=mostrecent"
     case "stat":
-      return url + "statute&volume=" + cite.volume + "&page=" + cite.page
+      return url + "statute&volume=" + citation.stat.volume + "&page=" + citation.stat.page
     case "fedreg":
-      return url + "fr&volume=" + cite.volume + "&page=" + cite.page
+      return url + "fr&volume=" + citation.fedreg.volume + "&page=" + citation.fedreg.page
     default:
       return false;
   }
 }
 
+if (typeof window === 'undefined') {
+  module.exports = {
+    getURLfromCitation: getURLfromCitation,
+    replaceDOM: replaceDOM,
+    citationToURL: citationToURL
+  }
+}
+else {
+  console.log(window.document.documentElement)
+  window.document.addEventListener("DOMContentLoaded", function() {
+    window.document.documentElement.innerHTML = replaceDOM(window.document)
+  })
+}
 },{"citation":1}]},{},[13]);

@@ -1,15 +1,13 @@
 // Load minified citation.js
 var Citation = require('citation');
 
-document.addEventListener("DOMContentLoaded", function() {
-  var citationToURL = function(citation) {
-    // var url = "/" + citation.reporter.volume + "/" + citation.reporter.reporter + "/" + citation.reporter.page;
-    var url = getURLfromCitation(citation)
-    if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
-    else return citation.match;
-  };
+var citationToURL = function(citation) {
+  var url = getURLfromCitation(citation)
+  if (url) return "<a class='citation' href='" + url + "'>" + citation.match + "</a>";
+  else return citation.match;
+};
 
-  //
+var replaceDOM = function (document) {
   var thePage = document.documentElement.cloneNode(true);
   // find the citations
   var citations = Citation.find(thePage.innerHTML).citations;
@@ -21,11 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // stick the link onto the DOM
     thePage.innerHTML = thePage.innerHTML.replace(citations[i].match, link);
   }
-  document.documentElement.innerHTML = thePage.innerHTML;
-});
+  return thePage.innerHTML;  
+}
 
 var getURLfromCitation = function (citation) {
-
   var url = "http://api.fdsys.gov/link?collection="
 
   switch (citation.type) {
@@ -44,4 +41,17 @@ var getURLfromCitation = function (citation) {
     default:
       return false;
   }
+}
+
+if (typeof window === 'undefined') {
+  module.exports = {
+    getURLfromCitation: getURLfromCitation,
+    replaceDOM: replaceDOM,
+    citationToURL: citationToURL
+  }
+}
+else {
+  window.document.addEventListener("DOMContentLoaded", function() {
+    window.document.documentElement.innerHTML = replaceDOM(window.document)
+  })
 }
